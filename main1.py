@@ -19,7 +19,7 @@ WebDriverWait(driver, 5).until(
 
 input_element = driver.find_element(By.CLASS_NAME, "gLFyf")
 input_element.clear()
-input_element.send_keys("tech with tim" + Keys.ENTER)
+input_element.send_keys("" + Keys.ENTER)
 
 WebDriverWait(driver, 5).until(
     EC.presence_of_element_located((By.PARTIAL_LINK_TEXT, ""))
